@@ -34,12 +34,10 @@ double sinn(double x, uint16_t count) {
   int k = 1;
   double res = 0;
   for (int i = 1; i <= count; i++) {
-    if (i % 2 != 0) {
+    if (i % 2 != 0)
       res += calcItem(x, k);
-    }
-    else {
+    else
       res -= calcItem(x, k);
-    }
     k += 2;
   }
   return res;
@@ -49,12 +47,10 @@ double cosn(double x, uint16_t count) {
   int k = 0;
   double res = 0;
   for (int i = 1; i <= count; i++) {
-    if (i % 2 != 0) {
+    if (i % 2 != 0)
       res += calcItem(x, k);
-    }
-    else {
+    else
       res -= calcItem(x, k);
-    }
     k += 2;
   }
   return res;
